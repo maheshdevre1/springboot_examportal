@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register Here</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+
+	<section class="signup-section">
+		<!--<img src="your-image-url.png" alt="Logo" class="logo">-->
+		<h2>Register Here !!</h2>
+
+		<form id="registerForm">
+			<input type="text" id="username" placeholder="Username *">
+			<input type="password" id="password" placeholder="Password *">
+			<input type="text" id="firstName" placeholder="First Name *">
+			<input type="text" id="lastName" placeholder="Last Name *">
+			<input type="email" id="email" placeholder="Email *">
+			<input type="tel" id="phone" placeholder="Phone *">
+
+
+
+
+		</form>
+
+		<button type="submit" class="register-btn" onclick="signUp()">Register</button>
+
+		<!--<button type="reset" class="reset-btn">Reset</button>-->
+		<button type="button" onclick="resetFields()">Reset</button>
+	</section>
+
+	<div id="alertBox" class="alert">
+		<span class="close-btn" onclick="closeAlert()">&times;</span>
+		<span id="alertMessage"></span>
+	</div>
+
+
+
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

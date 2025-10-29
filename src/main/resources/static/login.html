@@ -1,0 +1,48 @@
+<!-- index.html or login.html inside static folder -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	<link rel="stylesheet" href="css/style.css"> <!-- path relative to static/ -->
+	<!-- Link to Font Awesome for icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+	<section class="login-section">
+		<h2>Welcome to Exam Portal</h2>
+		<!-- Username input with icon -->
+		<div class="input-container">
+			<i class="fas fa-user input-icon"></i>
+			<input type="text" id="username" placeholder="Enter Username" required />
+		</div>
+		<!-- Password input with icon -->
+		<div class="input-container">
+			<i class="fas fa-lock input-icon"></i>
+			<input type="password" id="password" placeholder="Enter Password" required />
+		</div>
+
+		<button onclick="login()">Login</button>
+		<button type="button" onclick="resetFields()">Reset</button>
+		<!-- Signup text as clickable -->
+		<div>
+			Not a Member? <span class="signup-link" onclick="redirectToSignup()">Signup</span>
+		</div>
+
+		<!--<div id="errorMsg" class="error"></div>-->
+	</section>
+
+
+	<!-- Alert div -->
+	<div id="alertBox" class="alert">
+		<span class="close-btn" onclick="closeAlert()">&times;</span>
+		<span id="alertMessage"></span>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>

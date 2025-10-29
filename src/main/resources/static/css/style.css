@@ -1,0 +1,291 @@
+/* Global Styles */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #e0e0e0;
+
+}
+
+/* Login Page */
+.login-section {
+	background-color: #ffffff;
+	padding: 30px 20px;
+	border-radius: 15px;
+	width: 350px;
+	margin: auto;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	transition: transform 0.3s ease;
+	margin-top: 100px;
+}
+
+/*.login-section:hover {
+    transform: translateY(-10px);  Slight lift effect 
+}*/
+
+.login-section h2 {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+/* Input Fields */
+.login-section input {
+	width: 83%;
+	padding: 12px;
+	margin: 10px 0;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+	transition: border-color 0.3s ease;
+}
+
+.login-section input:focus {
+	border-color: #007bff;
+	outline: none;
+}
+
+.login-section button {
+	width: 99%;
+	padding: 12px;
+	background-color: #007bff;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+.login-section button:hover {
+	background-color: #0056b3;
+}
+
+/* Buttons styled and aligned on the same line */
+.login-section button {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	margin: 5px;
+	/* Add space between buttons */
+}
+
+.login-section button:hover {
+	opacity: 0.9;
+}
+
+/* Login button styles */
+.login-section button:first-of-type {
+	background-color: #007bff;
+	color: white;
+}
+
+.login-section button:first-of-type:hover {
+	background-color: #0056b3;
+}
+
+/* Reset button styles */
+.login-section button:last-of-type {
+	background-color: #ccc;
+	color: black;
+}
+
+.login-section button:last-of-type:hover {
+	background-color: #aaa;
+}
+
+/* Align login and reset buttons in a row */
+.login-section button {
+	display: inline-block;
+	width: auto;
+}
+
+.login-section .error {
+	color: red;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+/* Add icons to input fields */
+.login-section .input-icon {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #007bff;
+}
+
+.input-container {
+	position: relative;
+}
+
+.input-container input {
+	padding-left: 35px;
+	/* Space for icon */
+}
+
+
+
+.error {
+	color: red;
+	font-size: 18px;
+}
+
+.signup-link {
+	color: blue;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.signup-link:hover {
+	color: darkblue;
+}
+
+
+.alert {
+	padding: 15px 20px;
+	background-color: #f44336;
+	/* Default red for error */
+	color: white;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 1000;
+	border-radius: 5px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	display: none;
+	min-width: 250px;
+	font-size: 14px;
+}
+
+.alert.success {
+	background-color: #4CAF50;
+	/* Green */
+}
+
+.alert.error {
+	background-color: #f44336;
+	/* Red */
+}
+
+.alert.info {
+	background-color: #2196F3;
+	/* Blue */
+}
+
+.alert.warning {
+	background-color: #ff9800;
+	/* Orange */
+}
+
+.close-btn {
+	margin-left: 15px;
+	font-weight: bold;
+	float: right;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+
+
+/* Signup Section */
+
+/* Ensure all inputs take up full width */
+.signup-section input {
+	width: 90%;
+	padding: 12px;
+	margin: 10px 0;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+	transition: border-color 0.3s ease;
+}
+
+/* Optional: Style the form's container for better alignment */
+.signup-section {
+	width: 90%;
+	max-width: 350px;
+	/* Adjust the form width as needed */
+	margin: 30px auto 0; 
+	padding: 25px 15px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	background-color: #f9f9f9;
+	text-align: center;
+}
+
+.signup-section h2 {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 20px;
+	font-weight: 600;
+	text-align: center;
+	
+}
+
+.signup-section button {
+	width: 99%;
+	padding: 12px;
+	background-color: #007bff;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+.signup-section button:hover {
+	background-color: #0056b3;
+}
+
+/* Buttons styled and aligned on the same line */
+.signup-section button {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	margin: 5px;
+	/* Add space between buttons */
+}
+
+.signup-section button:hover {
+	opacity: 0.9;
+}
+
+/* Login button styles */
+.signup-section button:first-of-type {
+	background-color: #007bff;
+	color: white;
+}
+
+.signup-section button:first-of-type:hover {
+	background-color: #0056b3;
+}
+
+/* Reset button styles */
+.signup-section button:last-of-type {
+	background-color: #ccc;
+	color: black;
+}
+
+.signup-section button:last-of-type:hover {
+	background-color: #aaa;
+}
+
+/* Align login and reset buttons in a row */
+.signup-section button {
+	display: inline-block;
+	width: auto;
+}
+
+/* Dashboard Page */
+.dashboard-section {
+	padding: 20px;
+	background-color: white;
+	border-radius: 8px;
+	margin: auto;
+	width: 80%;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
